@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - pickupAble
+  - glass
+  - Explosion
+  - metal
+  - Manager
+  - LockCursor
+  - Missile
+  - WeaponCamera
+  - Laser
   layers:
   - Default
   - TransparentFX
