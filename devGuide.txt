@@ -1,0 +1,22 @@
+How to Set Up Unity for Android Apps:
+1. Install Unity (Make sure to check the Android development box)
+https://store.unity.com/download?ref=personal
+
+2. Install Android SDK (may have to go through Android Studio Setup Wizard)
+https://developer.android.com/studio/index.html
+
+3. Install JDK
+http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+
+4. In Unity, go to Edit > Preferences > External Tools and input the paths for the SDK and JDK
+
+5. In Unity, go to File > Build Settings and highlight "Android" on the platform box, and click Switch Platform
+
+Video Tutorial:
+https://www.youtube.com/watch?v=gB13a1J4zIk&t=162s
+
+How to Set Up testing on your Android device:
+1. Download Unity Remote 5
+2. Plug in Android device via USB to computer
+3. In Unity go to Edit > Project Settings > Editor
+4. Select a device under Unity Remote > Device in the Inspector panel
