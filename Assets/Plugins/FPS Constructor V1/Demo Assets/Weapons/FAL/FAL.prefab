@@ -4947,7 +4947,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -4971,7 +4971,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!1002 &8200003
 EditorExtensionImpl:
   serializedVersion: 6
@@ -5642,7 +5642,7 @@ MonoBehaviour:
   sellPrice: 150
   sellPriceUpgraded: 0
   icon: {fileID: 0}
-  upgradesApplied: []
+  upgradesApplied: 
   upgrades: []
   canBeSold: 1
   gun: {fileID: 0}
@@ -5691,7 +5691,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gscript: {fileID: 0}
   val: {x: -0.3154161, y: -0.3, z: 0.38}
-  cache: {x: 0, y: 0, z: 0}
 --- !u!114 &11400032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5729,9 +5728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7437d261447241148180a0281b5b64c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gscript: {fileID: 0}
   val: 1
-  cache: 0
 --- !u!114 &11400038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5815,7 +5812,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   val: 0
-  cache: 0
 --- !u!114 &11400050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5852,7 +5848,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   val: 0
-  cache: 0
 --- !u!114 &11400056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5985,7 +5980,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   val: 1
-  cache: 0
 --- !u!114 &11400072
 MonoBehaviour:
   m_ObjectHideFlags: 1

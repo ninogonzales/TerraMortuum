@@ -17,6 +17,11 @@ var interactDistance : float = 5; //How far can an object be to be interacted wi
 private var lastHit : Transform; //the last object we hit
 var interactMask : LayerMask; //Mask for raycast
 
+var carryWeight : int = 1; //how many guns can player hold per wave
+var reloadSpeed : double = 1.0;
+var inventory : GameObject[]; //Array of player's inventory
+var selectedItem : int = 0; //index of currently selected item in array
+
 //Settings
 static var autoReload : boolean = true; //Do guns automatically reload when emptied?
 static var fieldOfView : float = 60; //Base field of view for cameras
@@ -28,14 +33,14 @@ var RaycastsIgnore : LayerMask; //Layers that gun raycasts hit
 
 
 //Control Variables
-static var canMove : boolean = true;
-static var canSprint : boolean = true;
+static var canMove : boolean = false;
+static var canSprint : boolean = false;
 static var canLook : boolean = true; //Can the player look around?
 static var canFire : boolean = true;
 static var canAim : boolean = true;
-static var canCrouch : boolean = true;
+static var canCrouch : boolean = false;
 static var doesIdle : boolean = true;
-static var canInteract : boolean = true;
+static var canInteract : boolean = false;
 static var canSwitchWeapon : boolean = true;
 
 //Status

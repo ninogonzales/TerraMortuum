@@ -10,8 +10,11 @@
 */
 
 @HideInInspector
-var health : float = 100; 
-var maxHealth : float = 100;
+var health : float = 300; 
+var maxHealth : float = 300;
+
+
+
 var hitKickBack : float;
 var hitKickBackX : float;
 var kickMaxY : float;
