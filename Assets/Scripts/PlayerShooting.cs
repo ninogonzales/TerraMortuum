@@ -16,8 +16,8 @@ public class PlayerShooting : MonoBehaviour
     AudioSource gunAudio;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
-
-
+    Animation anim;
+    
     void Awake ()
     {
         shootableMask = LayerMask.GetMask ("Shootable");
@@ -25,6 +25,8 @@ public class PlayerShooting : MonoBehaviour
         gunLine = GetComponent <LineRenderer> ();
         gunAudio = GetComponent<AudioSource> ();
         gunLight = GetComponent<Light> ();
+        anim = GetComponentInParent<Animation>();
+       
     }
 
 
@@ -54,6 +56,8 @@ public class PlayerShooting : MonoBehaviour
     void Shoot ()
     {
         timer = 0f;
+
+        anim.Play("fire");
 
         gunAudio.Play ();
 
