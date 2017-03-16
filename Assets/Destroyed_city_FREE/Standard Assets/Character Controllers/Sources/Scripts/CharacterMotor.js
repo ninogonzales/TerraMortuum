@@ -70,7 +70,7 @@ enum MovementTransferOnJump {
 // We will contain all the jumping related variables in one helper class for clarity.
 class CharacterMotorJumping {
 	// Can the character jump?
-	var enabled : boolean = true;
+	var enabled : boolean = false;
 
 	// How high do we jump when pressing jump and letting go immediately
 	var baseHeight : float = 1.0;
@@ -111,7 +111,7 @@ class CharacterMotorJumping {
 var jumping : CharacterMotorJumping = CharacterMotorJumping();
 
 class CharacterMotorMovingPlatform {
-	var enabled : boolean = true;
+	var enabled : boolean = false;
 	
 	var movementTransfer : MovementTransferOnJump = MovementTransferOnJump.PermaTransfer;
 	
