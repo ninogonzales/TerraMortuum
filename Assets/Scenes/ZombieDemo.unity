@@ -2748,7 +2748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 712403460}
   m_Layer: 0
-  m_Name: ZombieSpawnPoint
+  m_Name: ZombieSpawnPointCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2761,7 +2761,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 712403459}
   m_LocalRotation: {x: 0.012838324, y: -0.78025603, z: 0.010287837, w: 0.6252439}
-  m_LocalPosition: {x: 609.48, y: -3.47, z: 325.89}
+  m_LocalPosition: {x: 590.74, y: -4.09, z: 321.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3458,7 +3458,7 @@ Transform:
   m_LocalScale: {x: 1500, y: 1100, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &800209051
 Prefab:
@@ -3799,7 +3799,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
   enemy: {fileID: 0}
   spawnTime: 3
   spawnPoints: []
@@ -3814,7 +3813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
   enemy: {fileID: 0}
   spawnTime: 3
   spawnPoints: []
@@ -3829,10 +3827,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
   enemy: {fileID: 0}
   spawnTime: 3
   spawnPoints: []
+--- !u!1 &850387626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 850387627}
+  m_Layer: 0
+  m_Name: ZombieSpawnPointRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &850387627
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 850387626}
+  m_LocalRotation: {x: 0.012838324, y: -0.78025603, z: 0.010287837, w: 0.6252439}
+  m_LocalPosition: {x: 595.63, y: -3.93, z: 299.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 1.84, y: -102.594, z: -0.411}
 --- !u!1001 &855060605
 Prefab:
   m_ObjectHideFlags: 0
@@ -6870,11 +6895,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
-  enemy: {fileID: 1818630256}
-  spawnTime: 3
+  enemy: {fileID: 1127099761900454, guid: 4c659f984281f374ca2e3fbf1cc5a478, type: 2}
+  spawnTime: 6
   spawnPoints:
   - {fileID: 712403460}
+  - {fileID: 1643178388}
+  - {fileID: 850387627}
 --- !u!4 &1567072385
 Transform:
   m_ObjectHideFlags: 0
@@ -7874,6 +7900,34 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
   m_PrefabInternal: {fileID: 1771692021}
+--- !u!1 &1643178387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1643178388}
+  m_Layer: 0
+  m_Name: ZombieSpawnPointLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1643178388
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1643178387}
+  m_LocalRotation: {x: 0.012838324, y: -0.78025603, z: 0.010287837, w: 0.6252439}
+  m_LocalPosition: {x: 587.7, y: -4.19, z: 335.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 1.84, y: -102.594, z: -0.411}
 --- !u!1 &1644633556
 GameObject:
   m_ObjectHideFlags: 0
@@ -7949,7 +8003,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
   enemy: {fileID: 0}
   spawnTime: 3
   spawnPoints: []
@@ -8485,11 +8538,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5447f016f83dfde47a5b78148735be89, type: 3}
   m_PrefabInternal: {fileID: 990849971}
---- !u!1 &1818630256 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1127099761900454, guid: 4c659f984281f374ca2e3fbf1cc5a478,
-    type: 2}
-  m_PrefabInternal: {fileID: 800209051}
 --- !u!4 &1831849213 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 19e3bec5d2084834e86823c680ab9eb1, type: 2}
@@ -9621,7 +9669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2144567069
 MonoBehaviour:
@@ -9634,7 +9682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHealth: {fileID: 0}
   enemy: {fileID: 0}
   spawnTime: 3
   spawnPoints: []
