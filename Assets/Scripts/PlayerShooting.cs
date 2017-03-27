@@ -5,7 +5,9 @@ public class PlayerShooting : MonoBehaviour
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
     public float range = 300f;
+    public int magazineSize = 12;
 
+    int bulletInMagazine;
 
     float timer;
     Ray shootRay = new Ray();
@@ -17,7 +19,8 @@ public class PlayerShooting : MonoBehaviour
     Light gunLight;
     float effectsDisplayTime = 0.2f;
     Animation anim;
-    
+    Animation reload;
+  
     void Awake ()
     {
         shootableMask = LayerMask.GetMask ("Shootable");
@@ -26,7 +29,8 @@ public class PlayerShooting : MonoBehaviour
         gunAudio = GetComponent<AudioSource> ();
         gunLight = GetComponent<Light> ();
         anim = GetComponentInParent<Animation>();
-       
+        reload = GetComponent<Animation>();
+        bulletInMagazine = magazineSize;
     }
 
 
@@ -43,6 +47,12 @@ public class PlayerShooting : MonoBehaviour
         {
             DisableEffects ();
         }
+
+        if (bulletInMagazine == 0)
+        {
+            reload.Play("reload");
+            bulletInMagazine = magazineSize;     
+        }
     }
 
 
@@ -53,37 +63,42 @@ public class PlayerShooting : MonoBehaviour
     }
 
 
-    void Shoot ()
+    void Shoot()
     {
-        timer = 0f;
-
-        anim.Play("fire");
-
-        gunAudio.Play ();
-
-        gunLight.enabled = true;
-
-        gunParticles.Stop ();
-        gunParticles.Play ();
-
-        gunLine.enabled = true;
-        gunLine.SetPosition (0, transform.position);
-
-        shootRay.origin = transform.position;
-        shootRay.direction = transform.right;
-
-        if(Physics.Raycast (shootRay, out shootHit, range, shootableMask))
+        if (!reload.IsPlaying("reload"))
         {
-            EnemyHealth enemyHealth = shootHit.collider.GetComponent <EnemyHealth> ();
-            if(enemyHealth != null)
+            timer = 0f;
+
+            anim.Play("fire");
+
+            gunAudio.Play();
+
+            gunLight.enabled = true;
+
+            gunParticles.Stop();
+            gunParticles.Play();
+
+            gunLine.enabled = true;
+            gunLine.SetPosition(0, transform.position);
+
+            shootRay.origin = transform.position;
+            shootRay.direction = transform.right;
+
+            bulletInMagazine -= 1;
+
+            if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
             {
-                enemyHealth.TakeDamage (damagePerShot, shootHit.point);
+                EnemyHealth enemyHealth = shootHit.collider.GetComponent<EnemyHealth>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.TakeDamage(damagePerShot, shootHit.point);
+                }
+                gunLine.SetPosition(1, shootHit.point * range);
             }
-            gunLine.SetPosition (1, shootHit.point * range);
-        }
-        else
-        {
-            gunLine.SetPosition (1, shootRay.origin + shootRay.direction * range);
+            else
+            {
+                gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
+            }
         }
     }
 }
