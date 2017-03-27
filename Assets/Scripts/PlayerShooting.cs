@@ -93,11 +93,11 @@ public class PlayerShooting : MonoBehaviour
                 {
                     enemyHealth.TakeDamage(damagePerShot, shootHit.point);
                 }
-                gunLine.SetPosition(1, shootHit.point * range);
+                gunLine.SetPosition(0, shootHit.point * range);
             }
             else
             {
-                gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
+                gunLine.SetPosition(0, shootRay.origin + shootRay.direction * range);
             }
         }
     }
