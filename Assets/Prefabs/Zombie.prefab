@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 114522881948081474}
   - component: {fileID: 114235962740828208}
   - component: {fileID: 114542195832164808}
+  - component: {fileID: 111500965048198116}
   m_Layer: 8
   m_Name: Zombie
   m_TagString: Untagged
@@ -1486,6 +1487,20 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!111 &111500965048198116
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1127099761900454}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 680aa8d4593c33b45842a78661c6b71e, type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114235962740828208
 MonoBehaviour:
   m_ObjectHideFlags: 1

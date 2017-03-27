@@ -66,6 +66,9 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
 
+        //Once player is dead, goes back to Main Menu for now. Replace this to go to a Game Over scene instead
+        SceneManager.LoadScene("MainMenu");
+
         playerShooting.DisableEffects ();
 
    
@@ -75,6 +78,8 @@ public class PlayerHealth : MonoBehaviour
         playerAudio.Play ();
 
         playerShooting.enabled = false;
+
+        
     }
 
 
