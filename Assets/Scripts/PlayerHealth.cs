@@ -68,8 +68,8 @@ public class PlayerHealth : MonoBehaviour
 
         playerShooting.DisableEffects ();
 
-        //this animation does not exist yet -Nino
-        //anim.SetTrigger ("Die");
+   
+        anim.SetTrigger ("Die");
 
         playerAudio.clip = deathClip;
         playerAudio.Play ();

@@ -1524,7 +1524,7 @@ MonoBehaviour:
   startingHealth: 100
   currentHealth: 0
   sinkSpeed: 2.5
-  scoreValue: 10
+  scoreValue: 100
   deathClip: {fileID: 0}
 --- !u!135 &135795684062466886
 SphereCollider:

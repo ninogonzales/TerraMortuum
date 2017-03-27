@@ -2709,8 +2709,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damagePerShot: 20
-  timeBetweenBullets: 0.15
+  timeBetweenBullets: 0.45
   range: 100
+  magazineSize: 12
 --- !u!114 &114289206974302076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3051,7 +3052,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 980888009
+  randomSeed: -731992092
   InitialModule:
     serializedVersion: 3
     enabled: 1
