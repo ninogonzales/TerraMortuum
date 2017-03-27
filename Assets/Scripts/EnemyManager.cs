@@ -26,7 +26,7 @@ namespace CompleteProject
             Instantiate (enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
 			}
 			catch (System.IndexOutOfRangeException ex){
-				Debug.Log ("Exception happened"); //Don't know why theres IndexOutOfRange.. it should be ok?
+				Debug.Log ("Exception happened");
 			}
         }
     }
