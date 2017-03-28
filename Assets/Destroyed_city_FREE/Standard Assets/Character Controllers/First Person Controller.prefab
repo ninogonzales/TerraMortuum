@@ -57,6 +57,7 @@ GameObject:
   - component: {fileID: 8100000}
   - component: {fileID: 114105155647403092}
   - component: {fileID: 114037853773037142}
+  - component: {fileID: 114396120487932890}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2711,7 +2712,7 @@ MonoBehaviour:
   damagePerShot: 40
   timeBetweenBullets: 0.45
   range: 200
-  magazineSize: 15
+  magazineSize: 12
   bulletInMagazine: 0
 --- !u!114 &114289206974302076
 MonoBehaviour:
@@ -2731,6 +2732,17 @@ MonoBehaviour:
   deathClip: {fileID: 8300000, guid: 5eed406469327aa48983e0e4e11b05f9, type: 3}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.463}
+--- !u!114 &114396120487932890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654f3116dba9ffb45a14bd0c504dfb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!120 &120169007099371920
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -3006,7 +3018,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1966016030316920}
   serializedVersion: 5
   lengthInSec: 0.1
-  speed: 1
+  simulationSpeed: 1
   looping: 0
   prewarm: 0
   playOnAwake: 0
@@ -3053,7 +3065,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 257687124
+  randomSeed: 1140348642
   InitialModule:
     serializedVersion: 3
     enabled: 1
