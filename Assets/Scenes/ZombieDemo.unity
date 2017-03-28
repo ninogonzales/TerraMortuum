@@ -9587,11 +9587,6 @@ Prefab:
       propertyPath: damageImage
       value: 
       objectReference: {fileID: 939022564}
-    - target: {fileID: 114037853773037142, guid: 9d4133d5d30b644bd87802a347eaccbe,
-        type: 2}
-      propertyPath: crosshairTexture
-      value: 
-      objectReference: {fileID: 2800000, guid: 69461242caf4247288b76c9a9e2e97e6, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_IsPrefabParent: 0

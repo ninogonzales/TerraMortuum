@@ -15,6 +15,6 @@ function Update(){
 
 function OnGUI(){
     if(isTriggered){
-        GUI.Label(Rect(Screen.width/2.4, Screen.height/2, 200, 200), crosshairTexture);
+        GUI.Label(Rect(Screen.width/2.4, Screen.height/2.1, 200, 200), crosshairTexture);
     }
 }

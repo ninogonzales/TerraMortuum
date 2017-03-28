@@ -2685,7 +2685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  crosshairTexture: {fileID: 2800000, guid: cf30480931380b94ea126c3b2df07cbb, type: 3}
+  crosshairTexture: {fileID: 2800000, guid: 69461242caf4247288b76c9a9e2e97e6, type: 3}
 --- !u!114 &114105155647403092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2708,10 +2708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c63be2a8918c741863160b9d9da122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerShot: 20
+  damagePerShot: 40
   timeBetweenBullets: 0.45
-  range: 100
-  magazineSize: 12
+  range: 200
+  magazineSize: 15
   bulletInMagazine: 0
 --- !u!114 &114289206974302076
 MonoBehaviour:
@@ -3006,7 +3006,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1966016030316920}
   serializedVersion: 5
   lengthInSec: 0.1
-  simulationSpeed: 1
+  speed: 1
   looping: 0
   prewarm: 0
   playOnAwake: 0
@@ -3053,7 +3053,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 341537497
+  randomSeed: 257687124
   InitialModule:
     serializedVersion: 3
     enabled: 1
