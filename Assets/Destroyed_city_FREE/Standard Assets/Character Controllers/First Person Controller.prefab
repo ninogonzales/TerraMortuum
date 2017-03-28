@@ -2712,7 +2712,7 @@ MonoBehaviour:
   damagePerShot: 40
   timeBetweenBullets: 0.45
   range: 200
-  magazineSize: 15
+  magazineSize: 12
   bulletInMagazine: 0
 --- !u!114 &114289206974302076
 MonoBehaviour:
@@ -3065,7 +3065,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 257687124
+  randomSeed: 1140348642
   InitialModule:
     serializedVersion: 3
     enabled: 1
