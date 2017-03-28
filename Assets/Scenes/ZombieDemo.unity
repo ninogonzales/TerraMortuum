@@ -8367,7 +8367,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1644633557}
   - component: {fileID: 1644633558}
-  - component: {fileID: 1644633559}
   m_Layer: 0
   m_Name: Directional light
   m_TagString: Untagged
@@ -8422,20 +8421,6 @@ Light:
   m_BounceIntensity: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &1644633559
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1644633556}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bf862ffeb7e74943a1729f1cff11eb4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 0}
-  spawnTime: 3
-  spawnPoints: []
 --- !u!4 &1650897076 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 5447f016f83dfde47a5b78148735be89, type: 3}
@@ -9606,7 +9591,7 @@ Prefab:
         type: 2}
       propertyPath: crosshairTexture
       value: 
-      objectReference: {fileID: 2800000, guid: fe958db9cce4447999dbd9d994588101, type: 3}
+      objectReference: {fileID: 2800000, guid: 69461242caf4247288b76c9a9e2e97e6, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
   m_IsPrefabParent: 0
