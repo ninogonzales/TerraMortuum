@@ -7,7 +7,7 @@ public class PlayerShooting : MonoBehaviour
     public float range = 300f;
     public int magazineSize = 12;
 
-    int bulletInMagazine;
+    public int bulletInMagazine;
 
     float timer;
     Ray shootRay = new Ray();

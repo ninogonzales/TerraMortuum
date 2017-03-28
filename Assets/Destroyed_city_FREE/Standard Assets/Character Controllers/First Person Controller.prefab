@@ -1427,7 +1427,7 @@ GameObject:
   - component: {fileID: 114228099605501962}
   m_Layer: 0
   m_Name: m9_fp
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2712,6 +2712,7 @@ MonoBehaviour:
   timeBetweenBullets: 0.45
   range: 100
   magazineSize: 12
+  bulletInMagazine: 0
 --- !u!114 &114289206974302076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3052,7 +3053,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -731992092
+  randomSeed: 341537497
   InitialModule:
     serializedVersion: 3
     enabled: 1
