@@ -16,6 +16,6 @@ public class AmmoManager : MonoBehaviour {
     }
 	
 	void Update () {
-        text.text = " x" + playerShooting.bulletInMagazine + " ∞";
+        text.text = "   x" + playerShooting.bulletInMagazine + " ∞";
     }
 }
