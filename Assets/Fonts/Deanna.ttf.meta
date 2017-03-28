@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 46a74d1bb747c2b48b34e5d5181e70d2
+timeCreated: 1490169689
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Deanna
+  fontNames:
+  - Deanna
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
