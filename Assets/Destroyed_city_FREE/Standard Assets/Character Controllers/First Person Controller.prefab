@@ -32,6 +32,7 @@ GameObject:
   - component: {fileID: 11400000}
   - component: {fileID: 11400002}
   - component: {fileID: 11400004}
+  - component: {fileID: 114570130636939098}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -57,6 +58,8 @@ GameObject:
   - component: {fileID: 8100000}
   - component: {fileID: 114105155647403092}
   - component: {fileID: 114037853773037142}
+  - component: {fileID: 114396120487932890}
+  - component: {fileID: 114627825437241458}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1427,7 +1430,7 @@ GameObject:
   - component: {fileID: 114228099605501962}
   m_Layer: 0
   m_Name: m9_fp
-  m_TagString: Untagged
+  m_TagString: weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2685,14 +2688,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
-  crosshairTexture: {fileID: 2800000, guid: cf30480931380b94ea126c3b2df07cbb, type: 3}
+  crosshairTexture: {fileID: 2800000, guid: 4ad6561b02624074e8b41e69f4780c0e, type: 3}
 --- !u!114 &114105155647403092
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07c16f53310ed3d4dbb1e770d08c6a7e, type: 3}
   m_Name: 
@@ -2708,10 +2711,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c63be2a8918c741863160b9d9da122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerShot: 20
+  damagePerShot: 40
   timeBetweenBullets: 0.45
-  range: 100
+  range: 200
   magazineSize: 12
+  bulletInMagazine: 0
 --- !u!114 &114289206974302076
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2730,6 +2734,39 @@ MonoBehaviour:
   deathClip: {fileID: 8300000, guid: 5eed406469327aa48983e0e4e11b05f9, type: 3}
   flashSpeed: 5
   flashColour: {r: 1, g: 0, b: 0, a: 0.463}
+--- !u!114 &114396120487932890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 654f3116dba9ffb45a14bd0c504dfb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114570130636939098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72cf6b5663f74d44ae00196febd1f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114627825437241458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a72cf6b5663f74d44ae00196febd1f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!120 &120169007099371920
 LineRenderer:
   m_ObjectHideFlags: 1
@@ -3005,7 +3042,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1966016030316920}
   serializedVersion: 5
   lengthInSec: 0.1
-  speed: 1
+  simulationSpeed: 1
   looping: 0
   prewarm: 0
   playOnAwake: 0
@@ -3052,7 +3089,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -731992092
+  randomSeed: 1140348642
   InitialModule:
     serializedVersion: 3
     enabled: 1
