@@ -9,11 +9,7 @@ public class MainMenu : MonoBehaviour {
     {
         SceneManager.LoadScene(scene);
     }
-    public void StoreBtn(string scene)
-    {
-        SceneManager.LoadScene(scene);
-    }
-    public void OptionsBtn(string scene)
+    public void HighScoresBtn(string scene)
     {
         SceneManager.LoadScene(scene);
     }
