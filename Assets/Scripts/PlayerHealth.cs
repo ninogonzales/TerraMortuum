@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     public AudioClip deathClip;
     public float flashSpeed = 5f;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+	public static int finalScore = 0;
 
 
     Animator anim;
@@ -66,15 +67,20 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
 
-        playerShooting.DisableEffects ();
+        //Once player is dead, goes back to Main Menu for now. Replace this to go to a Game Over scene instead
+        SceneManager.LoadScene("GameOver");
+
+        //playerShooting.DisableEffects ();
 
    
         anim.SetTrigger ("Die");
 
         playerAudio.clip = deathClip;
         playerAudio.Play ();
+		finalScore = ScoreManager.score;
+        //playerShooting.enabled = false;
 
-        playerShooting.enabled = false;
+        
     }
 
 

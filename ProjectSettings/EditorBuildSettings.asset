@@ -6,6 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/companylogo.unity
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
     path: Assets/Scenes/ZombieDemo.unity
+  - enabled: 1
+    path: Assets/Scenes/EnterName.unity
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+  - enabled: 1
+    path: Assets/Scenes/HighScores.unity
+  - enabled: 1
+    path: Assets/Scenes/creditscene.unity

@@ -13,6 +13,8 @@ TagManager:
   - Missile
   - WeaponCamera
   - Laser
+  - weapon
+  - score
   layers:
   - Default
   - TransparentFX
