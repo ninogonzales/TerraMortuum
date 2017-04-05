@@ -34,13 +34,16 @@ public class GameOver : MonoBehaviour {
         }
         
         SceneManager.LoadScene(scene);
+        banner.Hide();
 	}
     private void RequestBanner()
     {  
         string adUnitId = "ca-app-pub-2041584599449732/9974049800";
 
-        // Create a 320x50 banner at the top of the screen.
-        banner = new BannerView(adUnitId, AdSize.Banner, AdPosition.Top);
+        AdSize adSize = new AdSize(700, 40);
+
+        // Create a banner at the top of the screen.
+        banner = new BannerView(adUnitId, adSize, AdPosition.Top);
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
         // Load the banner with the request.
